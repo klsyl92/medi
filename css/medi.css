@@ -1,0 +1,128 @@
+.clearFix::before, .clearFix::after{display: block; content: ''; clear: both;}
+
+body{
+    font-family: "맑은 고딕","돋움", sans-serif;
+}
+.wrap{
+    width: 930px; margin: auto; 
+    /*border: 1px solid red;*/
+    position: relative;
+}
+a{text-decoration: none; color: inherit;}
+
+header{background-image: url(../images/top_bg_bar.png); background-repeat: repeat-x;}
+header .top1{text-align: center;}
+header .top2{/*overflow: auto;*/padding-top: 26px;}
+header .top2 h1{float: left; width: 280px;}
+header .top2 ul{float: left; padding-top: 14px;}
+header .top2 ul li{float: left; padding-right: 55px;}
+header .top2 h2{float: right; padding-top: 10px;}
+
+header .bar{
+    background-color: #8ac646; 
+    height: 8px; display: flex; 
+    min-width: 930px; 
+    clear: both;
+    box-shadow: 1px 0 0.5;
+}
+header .bar .bar1{width: 360px; height: 8px;}
+header .bar .bar2{
+    width: 720px; height: 8px; 
+    background-image: linear-gradient(to right, #1f7d47, #3c8f46);
+}
+header .bar .bar3{
+    width: 200px; height: 8px; 
+    background-image: linear-gradient(to right, #1650a5, #0c82c9);
+}
+
+section{}
+section .sect1{padding-top: 42px; width: 290px; height: 250px;}
+section .sect1 .tabM{}
+section .sect1 .tabM h3{
+    background-color: #e8e9e9;
+    border: 1px solid #e0e0e0;
+    float: left; padding: 8px 0;
+    width: 80px; text-align: center;
+    cursor: pointer; color: #787878; font-weight: bold;
+    margin-right: 1px;
+    font-size: 15px;
+}
+section .sect1 .tabM h3.on{
+    background-color: #fff; 
+    border-color: #18499f; color: #18499f;
+    border-bottom-color: #fff;
+    position: relative; top: 1px;
+}
+section .sect1 .tabC{
+    clear: both; 
+    border-top: 1px solid #18499f; 
+    font-size: 14px;
+    padding-top: 20px;
+}
+section .sect1 .tabC .notice{position: relative;}
+section .sect1 .tabC .notice td{
+    padding: 4px; letter-spacing: -1px; 
+    color: #888888;
+}
+section .sect1 .tabC .notice td:first-child{
+    background-image: url(../images/bul.png); 
+    background-repeat: no-repeat; 
+    background-position: left center;
+    padding-left: 10px;
+    color: #585858;
+}
+section .sect1 .tabC .notice td:first-child a{
+    width: 214px; display: block;
+    text-overflow: ellipsis; 
+    white-space: nowrap; overflow: hidden;   
+}
+
+section .sect1 .tabC .notice button{/*position: relative;*/
+    position: absolute; right: 0; top: -50px;
+    background-color: transparent; border: 0;
+    cursor: pointer;
+}
+section .sect1 .tabC .news{display: none;}
+section .sect2{width: 200px;}
+section .sect2 img{margin-bottom: 40px;}
+
+section .sect3{
+    position: absolute; top: 120px; left: 220px;
+}
+
+section .sect4{
+    position: absolute; top: 50px; right: 100px; 
+    animation: s4ani 3s infinite;
+}
+@keyframes s4ani{
+    0%{top: 50px;}
+    50%{top: 120px;}
+    100%{top: 50px;}
+}
+
+section .sect5{
+    position: absolute; top: 140px; right: 0;
+}
+
+footer{font-size: 13px; padding-top: 125px; letter-spacing: -1px; height: 80px;}
+footer .f1{float: left;}
+footer .f1 h4{float: left; padding-right: 15px;}
+footer .f1 address{float: left;}
+
+footer .f2{float: right; text-align: right; width: 235px;}
+footer .f2 li{float: left; padding: 0 5px;}
+footer .f2 select{margin-top: 10px; padding: 5px 20px;}
+footer .f2 select option{}
+
+
+
+
+
+
+
+
+
+
+
+
+
